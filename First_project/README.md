@@ -1,15 +1,23 @@
 # Friday
-My project name is First_project
+First Project by Ben Reynolds
+A simple job portolio
 
-I am the sole contributor of this project.
+Technologies used
+HTML
+CSS
+VS CODE
 
+Description
 This project is a portfolio meant to showcase previous works and inform companies of my potential value as an intern.
 
-The technologies used were a MacBook Air, Terminal, and VS Code.
+Setup/Installation
+Clone this repository to your desktop
+Navigate to the top level of the directory
+Open in browser
 
-To setup all you have to do is copy the link from the repository and do a git pull, or clone.
+Known bugs
+No known bugs
 
-There are no known bugs.
-
-No license
+License
+Epicodus
 # Friday
