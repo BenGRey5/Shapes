@@ -15,7 +15,9 @@ This project is a portfolio meant to showcase previous works and inform companie
 Setup/Installation-
 
 Clone this repository to your desktop
+
 Navigate to the top level of the directory
+
 Open in browser
 
 Known bugs-
