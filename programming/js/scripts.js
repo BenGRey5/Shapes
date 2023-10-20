@@ -5,21 +5,21 @@ document.addEventListener("DOMContentLoaded", function () {
         event.preventDefault(); // Prevent the form from submitting
 
         // Get user responses
-        const whyInterested = getSelectedValue('n/a'); // Add this line
-        const codingSkills = getSelectedValue('nothing');
-        const interestedInGames = getSelectedValue('.answer1');
-        const interestInBackendOrDataScience = getSelectedValue('.answer3');
-        const interestInWebDevelopment = getSelectedValue('.answer5');
+        const why = getSelectedValue('n/a'); // Add this line
+        const skills = getSelectedValue('nothing');
+        const interestGames = getSelectedValue('.answer1');
+        const interestBack = getSelectedValue('.answer3');
+        const interestDevelopment = getSelectedValue('.answer5');
 
         // Determine the recommendation
         let recommendation = "neither";
 
-        if (whyInterested && codingSkills && interestInBackendOrDataScience) {
-            if (interestedInGames === "yes1" && interestInBackendOrDataScience === "no2" && interestInWebDevelopment === "no3") {
+        if (why && skills && interestBack && interestGames && interestDevelopment) {
+            if (interestGames === "yes1" && interestBack === "no2" && interestDevelopment === "no3") {
                 recommendation = "cSharp";
-            } else if (interestedInGames === "no1" && interestInBackendOrDataScience === "yes2" && interestInWebDevelopment === "no3") {
+            } else if (interestGames === "no1" && interestBack === "yes2" && interestDevelopment === "no3") {
                 recommendation = "javaScript";
-            } else if (interestedInGames === "no1" && interestInBackendOrDataScience === "no2" && interestInWebDevelopment === "yes3") {
+            } else if (interestGames === "no1" && interestBack === "no2" && interestDevelopment === "yes3") {
                 recommendation = "javaScript";
             } else {
                 recommendation = "neither";
