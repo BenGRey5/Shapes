@@ -10,11 +10,11 @@ function hideResults() {
     event.preventDefault();
     hideResults();
         // Get user responses
-        const why = document.getSelectedValue('n/a');
+        const why = document.getSelectedValue("nad");
         const skills = document.getSelectedValue('nothing');
-        const interestGames = document.getSelectedValue('answer1');
-        const interestBack = document.getSelectedValue('answer3');
-        const interestDevelopment = document.getSelectedValue('answer5');
+        const interestGames = document.getSelectedValue("answer1");
+        const interestBack = document.getSelectedValue("answer3");
+        const interestDevelopment = document.getSelectedValue("answer5");
 
         // Determine the recommendation
         
