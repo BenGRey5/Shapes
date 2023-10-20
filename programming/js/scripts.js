@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const surveyForm = document.getElementById("radio-form");
 
     surveyForm.addEventListener("submit", function (event) {
+        surveyForm.addEventListener("click",function (reload){
         event.preventDefault(); // Prevent the form from submitting
 
         // Get user responses
@@ -27,8 +28,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         // Show the recommendation div and hide others
-        hideAllRecommendations();
-        document.getElementById(recommendation).classList.remove("hidden");
+        // hideAllRecommendations();
+        // document.getElementById(recommendation).classList.remove("hidden");
     });
 
     function getSelectedValue(name) {
@@ -43,10 +44,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function hideAllRecommendations() {
         const recommendations = document.querySelectorAll(".recommendation");
-        recommendations.forEach((rec) => {
+        recommendations.forEach(rec) => {
             rec.classList.add("hidden");
+            hideAllRecommendations();
+        document.getElementById(recommendation).classList.remove("hidden");
+            }
 
-            addEventListener
+            
         });
     }
-});
+}
+}
