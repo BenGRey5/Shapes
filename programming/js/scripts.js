@@ -1,56 +1,43 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const surveyForm = document.getElementById("radio-form");
+function hideResults() {
+    document.getElementById("neither").setAttribute("class", "hidden");
+    document.getElementById("cSharp").setAttribute("class", "hidden");
+    document.getElementById("python").setAttribute("class", "hidden");
+    document.getElementById("javaScript").setAttribute("class", "hidden");
+}
 
-    surveyForm.addEventListener("submit", function (event) {
-        event.preventDefault(); // Prevent the form from submitting
-
+    window.onload = function() {
+    document.querySelector("form").onsubmit = function(event) {
+    event.preventDefault();
+    hideResults();
         // Get user responses
-        const why = getSelectedValue('n/a');
-        const skills = getSelectedValue('nothing');
-        const interestGames = getSelectedValue('answer1'); // Note: no dot (.) before the name
-        const interestBack = getSelectedValue('answer3'); // Note: no dot (.) before the name
-        const interestDevelopment = getSelectedValue('answer5'); // Note: no dot (.) before the name
+        const why = document.getSelectedValue('n/a');
+        const skills = document.getSelectedValue('nothing');
+        const interestGames = document.getSelectedValue('answer1');
+        const interestBack = document.getSelectedValue('answer3');
+        const interestDevelopment = document.getSelectedValue('answer5');
 
         // Determine the recommendation
-        let recommendation = "neither";
+        
 
         if (why && skills && interestBack && interestGames) {
             if (interestGames === "yes1" && interestBack === "no2" && interestDevelopment === "no3") {
-                recommendation = "cSharp";
+                document.getElementById("cSharp").removeAttribute("class");
             } else if (interestGames === "no1" && interestBack === "yes2" && interestDevelopment === "no3") {
-                recommendation = "javaScript";
+                document.getElementById("javaScript").removeAttribute("class");
             } else if (interestGames === "no1" && interestBack === "no2" && interestDevelopment === "yes3") {
-                recommendation = "javaScript";
+                document.getElementById("python").removeAttribute("class");
             } else {
-                recommendation = "neither";
+                document.getElementById("neither").removeAttribute("class");
             }
         }
 
-        // Hide all recommendations
-        hideAllRecommendations();
+        
+    }
 
-        // Show the recommendation div
-        document.getElementById(recommendation).classList.remove("hidden");
-    });
-
-    function getSelectedValue(name) {
-        const radios = document.querySelectorAll(`input[type="radio"][name="${name}"]`);
-        for (const radio of radios) {
-            if (radio.checked) {
-                return radio.value;
-            }
+   
         }
-        return null;
-    }
+    
 
-    function hideAllRecommendations() {
-        const recommendations = document.querySelectorAll(".recommendation");
-        recommendations.forEach((rec) => {
-            rec.classList.add("hidden");
 
-            lorem ipsm 
-        });
-    }
-});
 
     
