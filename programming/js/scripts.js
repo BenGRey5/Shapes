@@ -45,6 +45,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const recommendations = document.querySelectorAll(".recommendation");
         recommendations.forEach((rec) => {
             rec.classList.add("hidden");
+
+            addEventListener
         });
     }
 });
