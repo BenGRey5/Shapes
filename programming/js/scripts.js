@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
         event.preventDefault(); // Prevent the form from submitting
 
         // Get user responses
-        const whyInterested = getSelectedValue('n/a');
-        const codingSkills = getSelectedValue('n/a');
+        const whyInterested = getSelectedValue('n/a'); // Add this line
+        const codingSkills = getSelectedValue('nothing');
         const interestedInGames = getSelectedValue('.answer1');
         const interestInBackendOrDataScience = getSelectedValue('.answer3');
         const interestInWebDevelopment = getSelectedValue('.answer5');
@@ -15,12 +15,14 @@ document.addEventListener("DOMContentLoaded", function () {
         let recommendation = "neither";
 
         if (whyInterested && codingSkills && interestInBackendOrDataScience) {
-            if (interestedInGames === "yes1") {
+            if (interestedInGames === "yes1" && interestInBackendOrDataScience === "no2" && interestInWebDevelopment === "no3") {
                 recommendation = "cSharp";
-            } else if (interestInWebDevelopment === "yes3") {
+            } else if (interestedInGames === "no1" && interestInBackendOrDataScience === "yes2" && interestInWebDevelopment === "no3") {
+                recommendation = "javaScript";
+            } else if (interestedInGames === "no1" && interestInBackendOrDataScience === "no2" && interestInWebDevelopment === "yes3") {
                 recommendation = "javaScript";
             } else {
-                recommendation = "python";
+                recommendation = "neither";
             }
         }
 
