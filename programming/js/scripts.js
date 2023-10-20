@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Determine the recommendation
         let recommendation = "neither";
 
-        if (why && skills && interestBack && interestGames && interestDevelopment) {
+        if (why && skills && interestBack && interestGames) {
             if (interestGames === "yes1" && interestBack === "no2" && interestDevelopment === "no3") {
                 recommendation = "cSharp";
             } else if (interestGames === "no1" && interestBack === "yes2" && interestDevelopment === "no3") {
