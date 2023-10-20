@@ -2,15 +2,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const surveyForm = document.getElementById("radio-form");
 
     surveyForm.addEventListener("submit", function (event) {
-        surveyForm.addEventListener("click",function (reload){
         event.preventDefault(); // Prevent the form from submitting
 
         // Get user responses
-        const why = getSelectedValue('n/a'); // Add this line
+        const why = getSelectedValue('n/a');
         const skills = getSelectedValue('nothing');
-        const interestGames = getSelectedValue('.answer1');
-        const interestBack = getSelectedValue('.answer3');
-        const interestDevelopment = getSelectedValue('.answer5');
+        const interestGames = getSelectedValue('answer1'); // Note: no dot (.) before the name
+        const interestBack = getSelectedValue('answer3'); // Note: no dot (.) before the name
+        const interestDevelopment = getSelectedValue('answer5'); // Note: no dot (.) before the name
 
         // Determine the recommendation
         let recommendation = "neither";
@@ -27,9 +26,11 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
 
-        // Show the recommendation div and hide others
-        // hideAllRecommendations();
-        // document.getElementById(recommendation).classList.remove("hidden");
+        // Hide all recommendations
+        hideAllRecommendations();
+
+        // Show the recommendation div
+        document.getElementById(recommendation).classList.remove("hidden");
     });
 
     function getSelectedValue(name) {
@@ -44,14 +45,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function hideAllRecommendations() {
         const recommendations = document.querySelectorAll(".recommendation");
-        recommendations.forEach(rec) => {
+        recommendations.forEach((rec) => {
             rec.classList.add("hidden");
-            hideAllRecommendations();
-        document.getElementById(recommendation).classList.remove("hidden");
-            }
 
-            
+            lorem ipsm 
         });
     }
-}
-}
+});
+
+    
