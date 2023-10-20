@@ -1,13 +1,11 @@
-document.getElementById("Q1")setAttribute("class", "hidden");
-document.getElementById("Q2")setAttribute("class", "hidden");
-document.getElementById("Q3")setAttribute("class", "hidden");
-document.getElementById("Q4")setAttribute("class", "hidden");
-document.getElementById("Q5")setAttribute("class", "hidden");
-document.getElementById("Q6")setAttribute("class", "hidden");
+const question1 = document.querySelector(".answer1");
+const question2 = document.querySelector(".answer2");
+const question3 = document.querySelector(".answer3");
+const question4 = document.querySelector(".answer4");
+const question5 = document.querySelector(".answer5");
+const question6 = document.querySelector(".answer6");
 
-window.onload = function() {
-    document.querySelector("form").onsubmit = function(event) {
-        event.preventDefault
+
 
 
     }
