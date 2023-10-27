@@ -6,16 +6,25 @@ document.addEventListener("DOMContentLoaded", function(){
     function displayNumbers(){
         let num = parseInt(end1.value);
         let numbers = "";  
+
+        let changeArray = [];
         for(let i=0; i<= num; i++) {
     numbers += i + " ";
+    for(changeArray.push(i)) {
+        if (i==2){
+            2=
+        }
+    }
     }
     answer1.innerHTML = numbers;
 }
+
+
+changeArray.push(values);
     btn1.addEventListener('click', displayNumbers);
 });
 
 
-fsdakfkasdnfksdkfn
 
 
 
