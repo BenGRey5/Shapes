@@ -1,29 +1,34 @@
 document.addEventListener("DOMContentLoaded", function () {
 let inputValue = document.getElementById("numberInput").value;
 const numberArray = [];
+
+document.getElementById("submitButton").addEventListener("click", function () {
+    let inputValue = document.getElementById("numberInput").value;
+
 for (let i = 0; i <= inputValue; i++) {
-    numberArray.push(i)
+    numberArray.push(i);
 }
 
 function replaceNumbers(number) {
-    for (const digit of numberToCheck)
-    if (number.includes(numberToCheck)) {
-        if (number.includes(1)) {
+    const numberAsString = number.toString();
+    if (numberAsString.includes("1")) {
         return "BEEP!";
-    } else if (number.includes(2)) {
+    } else if (numberAsString.includes("2")) {
         return "BOOP!";
-    } else if (number.includes(3)) {
+    } else if (numberAsString.includes("3")) {
         return "Won't you be my neighbor?";
     } else {
         return number;
     }
 }
 
+const modifiedArray = numberArray.map(replaceNumbers);
+console.log(modifiedArray);
 });
 
 
 
-dfhadshfashdfhasdh
+
 
 
 
