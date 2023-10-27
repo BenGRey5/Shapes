@@ -5,11 +5,11 @@ document.addEventListener("DOMContentLoaded", function(){
 
     function displayNumbers(){
         let num = parseInt(end1.value);
-        let i;  
-        for(let i=1; i<= num; i++) {
-    console.log(i)
+        let numbers = "";  
+        for(let i=0; i<= num; i++) {
+    numbers += i + " ";
     }
-    answer1.innerHTML = i;
+    answer1.innerHTML = numbers;
 }
     btn1.addEventListener('click', displayNumbers);
 });
