@@ -1,5 +1,9 @@
 let inputValue = document.getElementById("numberInput").value;
-console.log("Input Value: " + inputValue);
+const numberArray = [];
+for (let i = 0; i <= inputValue; i++) {
+    numberArray.push(i)
+}
+console.log(numberArray);
 
 
 
