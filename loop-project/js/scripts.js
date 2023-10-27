@@ -1,12 +1,17 @@
 document.addEventListener("DOMContentLoaded", function(){
-    let end1 = document.getElementById('numberInput');
+    const end1 = document.getElementById('numberInput');
     const btn1 = document.getElementById('btn1');
     const answer1 = document.getElementById('result')
 
     function displayNumbers(){
-        answer1.innerHTML =  end1.value;
+        let num = parseInt(end1.value);
+        let i;  
+        for(let i=1; i<= num; i++) {
+    console.log(i)
     }
-    btn1.addEventListener('click',displayNumbers)
+    answer1.innerHTML = i;
+}
+    btn1.addEventListener('click', displayNumbers);
 });
 
 
