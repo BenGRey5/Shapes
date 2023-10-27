@@ -1,11 +1,36 @@
-document.addEventListener("DOMContentLoaded", function() {
-let button = document.getElementById("submitButton");
-button.addEventListener("click", function() {
-let inputValue = document.getElementById("numberInput");
-let inputElement = inputValue.value;
-let endOfLIne = parseInt(inputElement);
+let endOfLine = parseInt(document.getElementById("numberInput"));
 
-console.log(endOfLine)
-let i
-});
-});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// document.addEventListener("DOMContentLoaded", function() {
+
+//     let numberInput = document.getElementById("numberInput");
+//     let submit = document.getElementById("submit");
+    
+//     submit.addEventListener("click", function(){
+//         let endOfLine = numberInput.value;
+    
+    
+    
+    
+//     let i
+//     });
+//     });
