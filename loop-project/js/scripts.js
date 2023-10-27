@@ -1,18 +1,27 @@
+document.addEventListener("DOMContentLoaded", function () {
 let inputValue = document.getElementById("numberInput").value;
 const numberArray = [];
 for (let i = 0; i <= inputValue; i++) {
     numberArray.push(i)
 }
-console.log(numberArray);
+
+function replaceNumbers(number) {
+    for (const digit of numberToCheck)
+    if (number.includes(numberToCheck)) {
+        if (number.includes(1)) {
+        return "BEEP!";
+    } else if (number.includes(2)) {
+        return "BOOP!";
+    } else if (number.includes(3)) {
+        return "Won't you be my neighbor?";
+    } else {
+        return number;
+    }
+}
+
+});
 
 
-
-
-
-fjsafjjsasfjsfs
-
-
-fgjdsjafngjsangjn
 
 
 
@@ -92,21 +101,5 @@ fgjdsjafngjsangjn
 
 
 
-    btn1.addEventListener('click', displayNumbers);
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//     btn1.addEventListener('click', displayNumbers);
+// })
