@@ -6,9 +6,18 @@ Code:   Pizza.prototype.calculatePrice = function() {
 };
 Expected Output: 36
 
-Test:
-Code:
-Expected Output:
+Test: "It should return the values of the toppings I input
+Code: const toppingPrices = {
+    Pepperoni: 0.50,
+    Pineapple: 0.25,
+    Onions: .25,
+    Olives: .30,
+    Mushrooms: .25,
+    Canadianbacon: 0.50,
+    Peppers: 0.30,
+    Tomatoes: 0.20,
+    };
+Expected Output: .5, .25, .25, .3, .25, .5, .3, .2
 
 Test:
 Code:
