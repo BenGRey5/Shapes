@@ -1,13 +1,17 @@
 document.addEventListener('DOMContentLoaded', function() {
 
 
+for (let i = 1; i <= 8; i++) {
+const checkbox = document.getElementById('checkbox' + i);
+checkbox.addEventListener('change', function() {
+    if (topping1.checked)
 
-let checkbox = document.getElementById
+
 }
+fdafgadfhgsfhsfhsfg
 
 
 
-this royaly sucks
 
 
 
