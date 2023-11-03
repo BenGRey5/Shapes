@@ -1,21 +1,20 @@
 document.addEventListener('DOMContentLoaded', function() {
-let price = 3;
+let price = 4.70;
 
 for (let i = 1; i <= 8; i++) {
 const checkbox = document.getElementById('checkbox' + i);
 checkbox.addEventListener('change', function() {
-    if (topping.checked) {
-        price += .3;
+    if (checkbox.checked) {
+        price += 0.3;
+    } else {
+        price -= 0.3
     }
-
-
+    document.getElementById('priceDisplay').textContent = 'Price: $' + price.toFixed(2);
+});
 }
-fdafgadfhgsfhsfhsfg
+});
+console.log(price)
 
-
-
-
-fgdagdafgsdfhgsdg
 
 
 
