@@ -1,10 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
-
+let price = 3;
 
 for (let i = 1; i <= 8; i++) {
 const checkbox = document.getElementById('checkbox' + i);
 checkbox.addEventListener('change', function() {
-    if (topping1.checked)
+    if (topping.checked) {
+        price += .3;
+    }
 
 
 }
@@ -13,7 +15,7 @@ fdafgadfhgsfhsfhsfg
 
 
 
-
+fgdagdafgsdfhgsdg
 
 
 
