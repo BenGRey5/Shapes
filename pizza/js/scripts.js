@@ -1,15 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
     function Pizza(size, toppings) {
         this.size = size
-        this.toppings = toppings
-    }
-    
-    
-    
-    
-    
-    
-    const pizzaVariables = {
+        this.toppings = toppings;
+        this.calculatePrice = function() {
+            let basePrice = 0;
+            let toppingPrice = 0
+
+        const toppingPrices = {
         Pepperoni: 0.50,
         Pineapple: 0.25,
         Onions: 0.25, 
@@ -24,9 +21,30 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
 
-fhasbfhbashdbfhasdbfhb
+const sizePrices = {
+    Small: 3,
+    Medium: 5,
+    Large: 7
+};
 
-ffdfgagdfgdfsghsfgjsfg
+if (sizePrices[this.size]) {
+    basePrice = sizePrices[this.size]
+} else {
+    return 0;
+}
+If (Array.isArray(this.toppings)) {
+    for (let i = 0; i< this.toppings.length; i++) {
+        const topping = this.toppings[i];
+        if (toppingPrices[topping]); {
+            toppingPrice += toppingPrices[topping];
+        } 
+        return basePrice + toppingPrice;
+    }
+}
+const myPizza = new Pizza("small", ["Pepperoni", "Mushrooms"]);
+const totalPrice = myPizza.calculatePrice();
+console.log("Total price : $" + totalPrice);
+        });
 
 
 
