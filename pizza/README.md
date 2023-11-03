@@ -19,8 +19,36 @@ Code: const toppingPrices = {
     };
 Expected Output: .5, .25, .25, .3, .25, .5, .3, .2
 
-Test:
-Code:
+Describe: toppings calculation
+Test: "It should return the combined total of the toppings chosen"
+Code: switch (this.toppings) 
+            case "Pepperoni":
+                price += toppingPrices.Pepperoni;
+                break;
+            case "Pineapple":
+                price += toppingPrices.Pineapple;
+                break;
+            case "Onions":
+                price += toppingPrices.Onions;
+                break;
+            case "Olives":
+                price += toppingPrices.Olives;
+                break;
+            case "Mushrooms":
+                price += toppingPrices.Mushrooms;
+                break;
+            case "Canadianbacon":
+                price += toppingPrices.Canadianbacon;
+                break;
+            case "Peppers":
+                price += toppingPrices.Peppers;
+                break;
+            case "Tomatoes":
+                price += toppingPrices.Tomatoes;
+                break;
+            default:
+                price += 0; 
+                break;
 Expected Output:
 
 Test:
