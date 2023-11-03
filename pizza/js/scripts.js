@@ -16,11 +16,21 @@ document.addEventListener('DOMContentLoaded', function() {
         Large: 1.2
     };
 
+    const checkbox1 = document.getElementById("topping1");
+    const checkbox1 = document.getElementById("checkbox1");
+    const checkbox1 = document.getElementById("topping1");
+    const checkbox1 = document.getElementById("checkbox1");
+    const checkbox1 = document.getElementById("topping1");
+    const checkbox1 = document.getElementById("checkbox1");
+    const checkbox1 = document.getElementById("topping1");
+    const checkbox1 = document.getElementById("checkbox1");
+    
     function Pizza(toppings, size) {
         this.toppings = toppings;
         this.size = size;
     }
-
+    const priceDisplay = document.getElementById('priceDisplay');
+    const radioToppings = document.getElementsByName('topping')
     Pizza.prototype.calculateToppings = function() {
         let price = 4; // Initialize the price with a base value
 
