@@ -1,19 +1,27 @@
 document.addEventListener('DOMContentLoaded', function() {
-let price = 4.70;
-
-for (let i = 1; i <= 8; i++) {
-const checkbox = document.getElementById('checkbox' + i);
-checkbox.addEventListener('change', function() {
-    if (checkbox.checked) {
-        price += 0.3;
-    } else {
-        price -= 0.3
+    function Pizza(size, toppings) {
+        this.size = size
+        this.toppings = toppings
     }
-    document.getElementById('priceDisplay').textContent = 'Price: $' + price.toFixed(2);
-});
-}
-});
-console.log(price)
+    
+    
+    
+    
+    
+    
+    const pizzaVariables = {
+        Pepperoni: 0.50,
+        Pineapple: 0.25,
+        Onions: 0.25, 
+        Olives: 0.30,  
+        Mushrooms: 0.25, 
+        Canadianbacon: 0.50,
+        Peppers: 0.30, 
+        Tomatoes: 0.20,
+        Small: .8,
+        Medium: 1,
+        Large: 1.2
+    };
 
 
 
@@ -142,4 +150,23 @@ console.log(price)
 //     }
 // });
 
+
+
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     let price = 4.70;
+    
+//     for (let i = 1; i <= 8; i++) {
+//     const checkbox = document.getElementById('checkbox' + i);
+//     checkbox.addEventListener('change', function() {
+//         if (checkbox.checked) {
+//             price += 0.3;
+//         } else {
+//             price -= 0.3
+//         }
+//         document.getElementById('priceDisplay').textContent = 'Price: $' + price.toFixed(2);
+//     });
+//     }
+//     });
+//     console.log(price)
 
