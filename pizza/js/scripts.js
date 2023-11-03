@@ -10,6 +10,12 @@ document.addEventListener('DOMContentLoaded', function() {
         Tomatoes: 0.20,
     };
 
+    const pizzaSize = {
+        Small: .8,
+        Medium: 1,
+        Large: 1.2
+    };
+
     function Pizza(toppings, size) {
         this.toppings = toppings;
         this.size = size;
@@ -46,6 +52,18 @@ document.addEventListener('DOMContentLoaded', function() {
             default:
                 price += 0; 
                 break;
+        }
+
+        switch (this.size) {
+            case "Small":
+            price *= pizzaSize.Small;
+            break;
+            case "Medium":
+            price *= pizzaSize.Medium;
+            break;
+            case "Large":
+            price *= pizzaSize.Large;
+            break;
         }
 
         return price; 
